@@ -1,0 +1,261 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en" dir="ltr">
+  <head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="shortcut icon" href="/sites/default/files/garland_favicon.png" type="image/x-icon" />
+    <title>Numerical Analysis | scilab.in</title>
+    <link type="text/css" rel="stylesheet" media="all" href="/modules/aggregator/aggregator.css?D" />
+<link type="text/css" rel="stylesheet" media="all" href="/modules/book/book.css?D" />
+<link type="text/css" rel="stylesheet" media="all" href="/modules/node/node.css?D" />
+<link type="text/css" rel="stylesheet" media="all" href="/modules/poll/poll.css?D" />
+<link type="text/css" rel="stylesheet" media="all" href="/modules/system/defaults.css?D" />
+<link type="text/css" rel="stylesheet" media="all" href="/modules/system/system.css?D" />
+<link type="text/css" rel="stylesheet" media="all" href="/modules/system/system-menus.css?D" />
+<link type="text/css" rel="stylesheet" media="all" href="/modules/user/user.css?D" />
+<link type="text/css" rel="stylesheet" media="all" href="/sites/all/modules/cck/theme/content-module.css?D" />
+<link type="text/css" rel="stylesheet" media="all" href="/sites/all/modules/ckeditor/ckeditor.css?D" />
+<link type="text/css" rel="stylesheet" media="all" href="/sites/all/modules/extra_voting_forms/widgets/default/extra_voting_forms_all.css?D" />
+<link type="text/css" rel="stylesheet" media="all" href="/sites/all/modules/fivestar/css/fivestar.css?D" />
+<link type="text/css" rel="stylesheet" media="all" href="/sites/all/modules/nice_menus/nice_menus.css?D" />
+<link type="text/css" rel="stylesheet" media="all" href="/sites/all/modules/nice_menus/nice_menus_default.css?D" />
+<link type="text/css" rel="stylesheet" media="all" href="/modules/forum/forum.css?D" />
+<link type="text/css" rel="stylesheet" media="all" href="/sites/all/modules/extlink/extlink.css?D" />
+<link type="text/css" rel="stylesheet" media="all" href="/sites/all/modules/cck/modules/fieldgroup/fieldgroup.css?D" />
+<link type="text/css" rel="stylesheet" media="all" href="/sites/all/modules/views/css/views.css?D" />
+<link type="text/css" rel="stylesheet" media="all" href="/modules/openid/openid.css?D" />
+<link type="text/css" rel="stylesheet" media="all" href="/themes/garland/style.css?D" />
+<link type="text/css" rel="stylesheet" media="print" href="/themes/garland/print.css?D" />
+    <script type="text/javascript" src="/misc/jquery.js?D"></script>
+<script type="text/javascript" src="/misc/drupal.js?D"></script>
+<script type="text/javascript" src="/sites/all/modules/extra_voting_forms/extra_voting_forms.js?D"></script>
+<script type="text/javascript" src="/sites/all/modules/fivestar/js/fivestar.js?D"></script>
+<script type="text/javascript" src="/sites/all/modules/nice_menus/superfish/js/superfish.js?D"></script>
+<script type="text/javascript" src="/sites/all/modules/nice_menus/superfish/js/jquery.bgiframe.min.js?D"></script>
+<script type="text/javascript" src="/sites/all/modules/nice_menus/superfish/js/jquery.hoverIntent.minified.js?D"></script>
+<script type="text/javascript" src="/sites/all/modules/nice_menus/nice_menus.js?D"></script>
+<script type="text/javascript" src="/sites/all/modules/extlink/extlink.js?D"></script>
+<script type="text/javascript" src="/sites/all/modules/google_analytics/googleanalytics.js?D"></script>
+<script type="text/javascript" src="/modules/openid/openid.js?D"></script>
+<script type="text/javascript" src="/misc/tableheader.js?D"></script>
+<script type="text/javascript">
+<!--//--><![CDATA[//><!--
+jQuery.extend(Drupal.settings, { "basePath": "/", "extra_voting_forms": { "only_one_vote": 0, "login_page": "user/login", "base_path": "/" }, "fivestar": { "titleUser": "Your rating: ", "titleAverage": "Average: ", "feedbackSavingVote": "Saving your vote...", "feedbackVoteSaved": "Your vote has been saved.", "feedbackDeletingVote": "Deleting your vote...", "feedbackVoteDeleted": "Your vote has been deleted." }, "nice_menus_options": { "delay": 800, "speed": 1 }, "extlink": { "extTarget": "_blank", "extClass": "ext", "extSubdomains": 1, "extExclude": "", "extInclude": "", "extAlert": "_blank", "extAlertText": "This link will take you to an external web site.\r\n\r\nPlease rank this site when possible.", "mailtoClass": "mailto" }, "googleanalytics": { "trackOutbound": 1, "trackMailto": 1, "trackDownload": 1, "trackDownloadExtensions": "7z|aac|arc|arj|asf|asx|avi|bin|csv|doc|exe|flv|gif|gz|gzip|hqx|jar|jpe?g|js|mp(2|3|4|e?g)|mov(ie)?|msi|msp|pdf|phps|png|ppt|qtm?|ra(m|r)?|sea|sit|tar|tgz|torrent|txt|wav|wma|wmv|wpd|xls|xml|z|zip" } });
+//--><!]]>
+</script>
+<script type="text/javascript">
+<!--//--><![CDATA[//><!--
+var _gaq = _gaq || [];_gaq.push(["_setAccount", "UA-16974184-1"]);_gaq.push(["_trackPageview"]);(function() {var ga = document.createElement("script");ga.type = "text/javascript";ga.async = true;ga.src = ("https:" == document.location.protocol ? "https://ssl" : "http://www") + ".google-analytics.com/ga.js";var s = document.getElementsByTagName("script")[0];s.parentNode.insertBefore(ga, s);})();
+//--><!]]>
+</script>
+    <!--[if lt IE 7]>
+      <link type="text/css" rel="stylesheet" media="all" href="/themes/garland/fix-ie.css" />    <![endif]-->
+  </head>
+  <body class="sidebars">
+
+<!-- Layout -->
+  <div id="header-region" class="clear-block"></div>
+
+    <div id="wrapper">
+    <div id="container" class="clear-block">
+
+      <div id="header">
+        <div id="logo-floater">
+        <h1><a href="/" title=""><img src="/sites/default/files/garland_logo.png" alt="" id="logo" /></a></h1>        </div>
+
+                  <ul class="links primary-links"><li class="menu-730 first"><a href="http://www.scilab.in" title="">Home</a></li>
+<li class="menu-357"><a href="/scilabfeatures" title="">Features</a></li>
+<li class="menu-248"><a href="/DownloadScilab" title="">Downloads</a></li>
+<li class="menu-251"><a href="http://scilab.in/online_test" title="">Online Test</a></li>
+<li class="menu-292"><a href="http://scilab.in/usefullinks" title="">Useful Links</a></li>
+<li class="menu-700"><a href="/team" title="">Team</a></li>
+<li class="menu-293"><a href="/contactus" title="">Contact Us</a></li>
+<li class="menu-275"><a href="http://www.scilab.in/forum" title="">Forum</a></li>
+<li class="menu-763"><a href="http://scilab.in/Scilab_Brochure_2013.pdf" title="">Scilab Brochure</a></li>
+<li class="menu-764 last"><a href="http://oscad.net" title="">Oscad</a></li>
+</ul>                                  
+      </div> <!-- /header -->
+
+              <div id="sidebar-left" class="sidebar">
+          <div class="block block-theme"><form action="/node/126/"  accept-charset="UTF-8" method="post" id="search-theme-form">
+<div><div id="search" class="container-inline">
+  <div class="form-item" id="edit-search-theme-form-1-wrapper">
+ <label for="edit-search-theme-form-1">Search this site: </label>
+ <input type="text" maxlength="128" name="search_theme_form" id="edit-search-theme-form-1" size="15" value="" title="Enter the terms you wish to search for." class="form-text" />
+</div>
+<input type="submit" name="op" id="edit-submit-1" value="Search"  class="form-submit" />
+<input type="hidden" name="form_build_id" id="form-0087e10e68b00ac8ddaa3c6fde524a74" value="form-0087e10e68b00ac8ddaa3c6fde524a74"  />
+<input type="hidden" name="form_id" id="edit-search-theme-form" value="search_theme_form"  />
+</div>
+
+</div></form>
+</div>          <div id="block-menu-menu-custom" class="clear-block block block-menu">
+
+  <h2>custom</h2>
+
+  <div class="content"><ul class="menu"><li class="collapsed first"><a href="/links" title="">Learning Resources</a></li>
+<li class="collapsed"><a href="/Lab_Migration_Project" title="">Lab Migration Project</a></li>
+<li class="collapsed"><a href="/Textbook_Companion_Project" title="">Text Companion Project</a></li>
+<li class="collapsed last"><a href="/completed_workshops_list" title="">Scilab Workshops</a></li>
+</ul></div>
+</div>
+<div id="block-block-6" class="clear-block block block-block">
+
+
+  <div class="content"><style>
+p.india-map{
+padding:0;
+margin:0;
+}
+</style><p class='india-map'><a href='/india_map'><img src='/data/india.png' width="95%" /></a></p>
+</div>
+</div>
+        </div>
+      
+      <div id="center"><div id="squeeze"><div class="right-corner"><div class="left-corner">
+          <div class="breadcrumb"><a href="/">Home</a></div>                              <h2>Numerical Analysis</h2>                                                  <div class="clear-block">
+            <div id="node-126" class="node">
+
+
+
+      <span class="submitted">Sat, 04/24/2010 - 17:31 — <a href="/user/1" title="View user profile.">scilabadmin</a></span>
+  
+  <div class="content clear-block">
+    <p>Here are some documents for Numerical Analysis using Scilab.</p>
+  </div>
+
+  <div class="clear-block">
+    <div class="meta">
+        </div>
+
+      </div>
+
+</div>
+<div id="block-views-documentation_links-block_1" class="clear-block block block-views">
+
+  <h2>Documentation Links</h2>
+
+  <div class="content"><div class="view view-documentation-links view-id-documentation_links view-display-id-block_1 view-dom-id-1">
+    
+  
+  
+      <div class="view-content">
+      <table class="views-table sticky-enabled cols-2">
+    <thead>
+    <tr>
+              <th class="views-field views-field-title">
+          Title        </th>
+              <th class="views-field views-field-field-link-url">
+          <a href="/node/126?order=field_link_url&amp;sort=asc" title="sort by Link" class="active">Link</a>        </th>
+          </tr>
+  </thead>
+  <tbody>
+          <tr class="odd views-row-first">
+                  <td class="views-field views-field-title">
+            <a href="/node/128">Scilab is not Naive</a>          </td>
+                  <td class="views-field views-field-field-link-url">
+            <a href="http://www.scilab.org/content/download/1106/10848/file/scilabisnotnaive.pdf">http://www.scilab.org/content/download/1106/10848/file/scilabisnotnaive.pdf</a>          </td>
+              </tr>
+          <tr class="even views-row-last">
+                  <td class="views-field views-field-title">
+            <a href="/node/180">Analyse numérique pour les sciences physiques, Jean-Philippe Grivet, Université d’Orléans</a>          </td>
+                  <td class="views-field views-field-field-link-url">
+            <a href="http://www.scribd.com/doc/21124286/Analyse-Numerique-French">http://www.scribd.com/doc/21124286/Analyse-Numerique-French</a>          </td>
+              </tr>
+      </tbody>
+</table>
+    </div>
+  
+  
+  
+  
+  
+  
+</div> </div>
+</div>
+          </div>
+                    <div id="footer"><p>
+	<strong>Copyright @ IIT Bombay<br />
+	</strong></p>
+<div id="block-block-2" class="clear-block block block-block">
+
+
+  <div class="content"><script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script><script type="text/javascript">
+try {
+var pageTracker = _gat._getTracker("UA-4857461-8");
+pageTracker._trackPageview();
+} catch(err) {}
+</script></div>
+</div>
+<div id="block-block-1" class="clear-block block block-block">
+
+
+  <div class="content"><p>
+	</p>
+<script type="text/javascript">
+var sc_project=6152895; 
+var sc_invisible=0; 
+var sc_security="64e1611a"; 
+</script><script type="text/javascript"
+src="http://www.statcounter.com/counter/counter.js"></script><p><noscript><br />
+<div<br />
+class="statcounter"><a title="drupal analytics"<br />
+href="http://www.statcounter.com/drupal/"<br />
+target="_blank"><img class="statcounter"<br />
+src="http://c.statcounter.com/6152895/0/64e1611a/0/"<br />
+alt="drupal analytics" ></a>
+<p></p></div<br></noscript></p>
+</div>
+</div>
+</div>
+      </div></div></div></div> <!-- /.left-corner, /.right-corner, /#squeeze, /#center -->
+
+              <div id="sidebar-right" class="sidebar">
+                    <div id="block-user-0" class="clear-block block block-user">
+
+  <h2>User login</h2>
+
+  <div class="content"><form action="/node/126?destination=node%2F126"  accept-charset="UTF-8" method="post" id="user-login-form">
+<div><div class="form-item" id="edit-openid-identifier-wrapper">
+ <label for="edit-openid-identifier">Log in using OpenID: </label>
+ <input type="text" maxlength="255" name="openid_identifier" id="edit-openid-identifier" size="13" value="" class="form-text" />
+ <div class="description"><a href="http://openid.net/">What is OpenID?</a></div>
+</div>
+<div class="form-item" id="edit-name-wrapper">
+ <label for="edit-name">Username: <span class="form-required" title="This field is required.">*</span></label>
+ <input type="text" maxlength="60" name="name" id="edit-name" size="15" value="" class="form-text required" />
+</div>
+<div class="form-item" id="edit-pass-wrapper">
+ <label for="edit-pass">Password: <span class="form-required" title="This field is required.">*</span></label>
+ <input type="password" name="pass" id="edit-pass"  maxlength="60"  size="15"  class="form-text required" />
+</div>
+<input type="submit" name="op" id="edit-submit" value="Log in"  class="form-submit" />
+<input type="hidden" name="form_build_id" id="form-a8a41fbe8a41361c47eefafd1f01f068" value="form-a8a41fbe8a41361c47eefafd1f01f068"  />
+<input type="hidden" name="form_id" id="edit-user-login-block" value="user_login_block"  />
+<input type="hidden" name="openid.return_to" id="edit-openid.return-to" value="http://scilab.in/openid/authenticate?destination=node%2F126"  />
+<div class="item-list"><ul><li class="openid-link first"><a href="/%2523">Log in using OpenID</a></li>
+<li class="user-link last"><a href="/%2523">Cancel OpenID login</a></li>
+</ul></div><div class="item-list"><ul><li class="first"><a href="/user/register" title="Create a new user account.">Create new account</a></li>
+<li class="last"><a href="/user/password" title="Request new password via e-mail.">Request new password</a></li>
+</ul></div>
+</div></form>
+</div>
+</div>
+<div id="block-block-7" class="clear-block block block-block">
+
+
+  <div class="content"><!--AddThis Button BEGIN --><!--AddThis Button BEGIN --><div class="addthis_toolbox addthis_default_style addthis_16x16_style"><a class="addthis_button_google_plusone_share" style="float: left;"></a><a class="addthis_button_facebook" style="float: left;"></a><a class="addthis_button_twitter" style="float: left;"></a><a class="addthis_button_linkedin" style="float: left;"></a><a class="addthis_button_compact" style="float: left;"></a><a class="addthis_counter addthis_bubble_style" style="float: left;"></a></div>
+<script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=undefined"></script><!-- AddThis Button END--><!-- AddThis Button END--></div>
+</div>
+        </div>
+      
+    </div> <!-- /container -->
+  </div>
+<!-- /layout -->
+
+    </body>
+</html>

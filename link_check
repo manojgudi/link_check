@@ -1,0 +1,65 @@
+#!/usr/bin/python
+
+from HTMLParser import HTMLParser
+import argparse
+import os
+import urllib2
+
+
+# Arg parser
+parser = argparse.ArgumentParser(description="Script to check compatibiliy of scilab-scripts\n www.github.com/manojgudi/sci_auto_check")
+parser.add_argument("path", help="requires a valid file name")
+parser.add_argument("-c", help='Colorful Output', action = "store_true")
+args = parser.parse_args()
+
+if args.c:
+	# Colors
+	HEADER = '\033[95m'
+	OKBLUE = '\033[94m'
+	OKGREEN = '\033[92m'
+	WARNING = '\033[93m'
+	FAIL = '\033[91m'
+	ENDC = '\033[0m'
+else:
+	HEADER = OKBLUE = OKGREEN = WARNING = FAIL = ENDC = ''
+
+class link_check(HTMLParser):
+
+	def isValid(self, link_string):
+		# For a proxy network
+		try:
+			self.response = urllib2.urlopen(link_string)
+			
+			if link_string == self.response.url:
+				return OKGREEN+"Working: \n"+link_string+ENDC
+			else:
+				return WARNING+"Redirected link:\n"+link_string+ENDC+' -> '+OKBLUE+self.response.url
+				
+		except:
+			return FAIL+"Broken Link: \n"+link_string+ENDC
+			
+	
+	def handle_starttag(self, tag, attrs):
+		if tag == 'a':
+			# attr is a tuple (name, value)
+			for attr in attrs:
+				if attr[0] == 'href':
+					if (attr[1].startswith("http") or attr[1].startswith("https")):
+						print self.isValid(attr[1])
+						pass
+
+path = args.path
+for roots, dirs, files in os.walk(path):
+        for filename in files:
+	                if (filename.find('.html') != -1) or (filename.find('.htm') !=-1 ):
+				abs_file_name = roots + '/' + filename
+ 				print "-------------------"
+				print abs_file_name
+
+				# File I/O
+				file_obj = open(abs_file_name,'r')
+				content = file_obj.read()
+				file_obj.close()
+				parser = link_check()
+				parser.feed(content)
+
